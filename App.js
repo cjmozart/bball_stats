@@ -1,15 +1,21 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import {StackNavigator} from 'react-navigation'; 
+import LoginScreen from './src/screens/LoginScreen';
+import MatchScreen from './src/screens/MatchScreen';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <AppNavigator />
     );
   }
 }
+
+const AppNavigator = StackNavigator({
+  LoginScreen: { screen: LoginScreen},
+  MatchScreen: {screen: MatchScreen}
+})
 
 const styles = StyleSheet.create({
   container: {
