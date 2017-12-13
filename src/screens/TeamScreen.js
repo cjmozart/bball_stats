@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import {View, Text, StyleSheet} from "react-native";
+import React, { Component } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
-class TeamScreen extends Component{
-    render(){
+class TeamScreen extends Component {
+    render() {
         return (
             <View>
                 <Text>Team</Text>
