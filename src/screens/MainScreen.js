@@ -20,7 +20,7 @@ const Tabs = TabNavigator({
     MatchScreen: {
         screen: MatchScreen
     },
-    StatScreen:{
+    StatScreen: {
         screen: StatScreen
     },
 });
