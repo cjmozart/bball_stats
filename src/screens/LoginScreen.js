@@ -7,8 +7,8 @@ class LoginScreen extends Component{
             <View>
                 <Text>Login</Text>
                 <Button 
-                    onPress={() => this.props.navigation.navigate['MatchScreen'])} 
-                    title="Go to MatchScreen" />
+                    onPress={ () => this.props.navigation.navigate('MainScreen')} 
+                    title="Go to MainScreen" />
             </View>
         );
     }

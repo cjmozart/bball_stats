@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {StackNavigator} from 'react-navigation'; 
 import LoginScreen from './src/screens/LoginScreen';
-import MatchScreen from './src/screens/MatchScreen';
+import MainScreen from './src/screens/MainScreen';
 
 export default class App extends React.Component {
   render() {
@@ -14,9 +14,10 @@ export default class App extends React.Component {
 
 const AppNavigator = StackNavigator({
   LoginScreen: { screen: LoginScreen},
-  MatchScreen: {screen: MatchScreen}
+  MainScreen: {screen: MainScreen}
 })
 
+/*
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -25,3 +26,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+*/
