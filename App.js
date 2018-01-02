@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { StackNavigator } from 'react-navigation';
-import { Provider } from 'react-redux';
+/*import { StyleSheet, Text, View } from 'react-native';*/
+import { StackNavigator, addNavigationHelpers } from 'react-navigation';
+import { Provider, connect } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './src/reducers';
 import LoginScreen from './src/screens/LoginScreen';
@@ -17,10 +17,18 @@ export default class App extends React.Component {
   }
 }
 
+// Mulige screens:
 const AppNavigator = StackNavigator({
   LoginScreen: { screen: LoginScreen },
-  MainScreen: { screen: MainScreen }
-});
+  MainScreen: { screen: MainScreen },
+  },
+  { headerMode: 'none',
+    initialRouteName: 'LoginScreen' });
+/*
+const ActionForLoginScreen = AppNavigator.router.getActionForPathAndParams(
+  'LoginScreen'
+);
+*/
 
 /*
 const styles = StyleSheet.create({
